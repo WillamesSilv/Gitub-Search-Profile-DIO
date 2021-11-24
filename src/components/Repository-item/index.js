@@ -1,7 +1,9 @@
+import * as S from './styled'
+
 export function RepositoryITem({ name, linkToRepo, path }) {
   return (
-    <div>
-      <h2>{name}</h2>
+    <S.Wrapper>
+      <S.WrapperTitle>{name}</S.WrapperTitle>
       <h4>{path}</h4>
       <a 
       href={linkToRepo} 
@@ -10,6 +12,6 @@ export function RepositoryITem({ name, linkToRepo, path }) {
       >
         Visitar Repositório
       </a>
-    </div>
+    </S.Wrapper>
   )
 }

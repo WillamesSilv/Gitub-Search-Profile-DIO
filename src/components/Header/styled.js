@@ -18,6 +18,12 @@ export const Wrapper = styled.div `
     width: 100px;
     cursor: pointer;
     margin-left: 12px;
+    transition: all 0.3s;
+
+    &:hover{
+      background: #18a4c7;
+      opacity: 0.8;
+    }
   }
 
   input, button{
